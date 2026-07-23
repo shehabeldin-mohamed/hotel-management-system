@@ -19,7 +19,7 @@ An object-oriented Hotel Management System built with **Java** and **Hibernate O
 A major focus of this project was software analysis and design[cite: 1]. You can view the complete system architecture, user stories, and dynamic analysis in the master documentation file:
 * [InnPoint System Documentation (PDF)](./docs/hotel-management-system-documentation.pdf)
 
-## 🛠️ How to Run Locally
+## How to Run
 Because this project utilizes an embedded H2 database and includes a data-seeding script, it is completely portable and requires no external database server setup.
 
 1. Clone the repository: `git clone https://github.com/shehabeldin-mohamed/hotel-management-system.git`
