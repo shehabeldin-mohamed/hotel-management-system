@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:file:./data/hoteldb;AUTO_SERVER=TRUE;DB_CLOSE_DELAY=-1;MODE=LEGACY</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="org.example.hr.Person"/>
+        <mapping class="org.example.hr.Employee"/>
+        <mapping class="org.example.hr.Housekeeper"/>
+        <mapping class="org.example.hr.Technician"/>
+        <mapping class="org.example.hr.Receptionist"/>
+        <mapping class="org.example.hr.Admin"/>
+        <mapping class="org.example.booking.Customer"/>
+        <mapping class="org.example.booking.Reservation"/>
+        <mapping class="org.example.booking.Reservation$CheckIn"/>
+        <mapping class="org.example.booking.ReservationRoomType"/>
+        <mapping class="org.example.facility.CleaningTask"/>
+        <mapping class="org.example.facility.MaintenanceRequest"/>
+        <mapping class="org.example.facility.Room"/>
+        <mapping class="org.example.facility.RoomType"/>
+
+    </session-factory>
+</hibernate-configuration>
